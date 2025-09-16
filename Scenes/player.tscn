@@ -754,6 +754,85 @@ text = "0"
 horizontal_alignment = 1
 vertical_alignment = 1
 
+[node name="XP" type="ColorRect" parent="UI"]
+offset_left = 225.0
+offset_top = 142.0
+offset_right = 315.0
+offset_bottom = 157.0
+color = Color(0.227451, 0.223529, 0.207843, 0.415686)
+
+[node name="Label" type="Label" parent="UI/XP"]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 5.0
+offset_top = -12.0
+offset_right = 25.0
+offset_bottom = 12.0
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("8_gymyn")
+theme_override_font_sizes/font_size = 15
+text = "XP"
+
+[node name="Value" type="Label" parent="UI/XP"]
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -60.0
+offset_top = -12.0
+offset_right = -4.0
+offset_bottom = 27.0
+grow_horizontal = 0
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("8_gymyn")
+theme_override_font_sizes/font_size = 15
+text = "0/100"
+horizontal_alignment = 2
+
+[node name="Level" type="ColorRect" parent="UI"]
+offset_left = 225.0
+offset_top = 160.0
+offset_right = 315.0
+offset_bottom = 175.0
+color = Color(0.227451, 0.223529, 0.207843, 0.415686)
+
+[node name="Label" type="Label" parent="UI/Level"]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 5.0
+offset_top = -12.0
+offset_right = 25.0
+offset_bottom = 12.0
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("8_gymyn")
+theme_override_font_sizes/font_size = 15
+text = "Level"
+
+[node name="Value" type="Label" parent="UI/Level"]
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -60.0
+offset_top = -12.0
+offset_right = -4.0
+offset_bottom = 27.0
+grow_horizontal = 0
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("8_gymyn")
+theme_override_font_sizes/font_size = 15
+text = "1
+"
+horizontal_alignment = 2
+
 [connection signal="health_updated" from="." to="UI/HP" method="_on_player_health_updated"]
 [connection signal="stamina_updated" from="." to="UI/Stamina" method="_on_player_stamina_updated"]
 [connection signal="animation_finished" from="AnimatedSprite2D" to="." method="_on_animated_sprite_2d_animation_finished"]
